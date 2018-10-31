@@ -13,7 +13,7 @@ def get_earliest(string01, string02):
         else:                                               #third iteration, compare the days
             nString01 = string01[3:4]
             nString02 = string02[3:4]          
-        if(int(nString01) > int(nString02)):               #compare strings as ints and return lowest (if one is lowest)
+        if(int(nString01) > int(nString02)):                #compare strings as ints and return lowest (if one is lowest)
             return string02
         elif(int(nString01) < int(nString02)):
             return string01
