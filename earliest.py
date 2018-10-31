@@ -5,14 +5,15 @@
 def get_earliest(string01, string02):
         if(string01[6:]>string02[6:]):                                 
             return string01
-        if(string01[6:]>string02[6:]):                                    
+        elif(string01[6:]>string02[6:]):                                    
             return string02
-        if(string01[6:]<string02[:2]):                                   
+        elif(string01[6:]<string02[:2]):                                   
             return string01
-        if(string01[6:]>string02[:2]):                                   
+        elif(string01[6:]>string02[:2]):                                   
             return string02
-        if(string01[3:4]<string02[3:4]):                                   
+        elif(string01[3:4]<string02[3:4]):                                   
             return string01
-        if(string01[3:4]>string02[3:4]):                                   
+        elif(string01[3:4]>string02[3:4]):                                   
             return string02         
-        return string01                                         #defaults to returning string01 if both inputs are identical
+        else:
+            return string01                                         #defaults to returning string01 if both inputs are identical
